@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merge Sort Study Tool</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Algorithm Study Tool</h1>
+      <div class="card">
+        <div class="card-header">
+          <h2>Algorithm</h2>
+        </div>
+        <select id="algorithm-select">
+          <option value="merge-sort">Merge Sort</option>
+          <option value="primes">Primes Up To a Certain Number</option>
+          <option value="substring">Count Substrings of a String</option>
+        </select>
+        <div class="card-body">
+          <p class="code-block"></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h2>Enter the code</h2>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Fix the Code</h5>
+          <div class="code-display">
+            <pre class="code-block"></pre>
+          </div>
+          <form>
+            <label for="code-input" type="text" autocomplete="off">Type the code:</label>
+            <br />
+            <input type="text" id="code-input" type="text" autocomplete="off"/>
+            <br />
+            <button type="submit" id="submit-button">Submit</button>
+          </form>
+          <div class="entered-code">
+            <pre></pre>
+          </div>
+          <button id="start-button">Start</button>
+          <button id="reset-button">Reset</button>
+        </div>        
+      </div>
+    </div>
+  </body>
+</html>
